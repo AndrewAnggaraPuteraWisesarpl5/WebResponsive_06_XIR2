@@ -1,0 +1,191 @@
+*{
+    margin:0;
+    padding: 0;
+    outline: 0;
+   }
+  .main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(https://images.pexels.com/photos/12538152/pexels-photo-12538152.jpeg?cs=srgb&dl=pexels-till-daling-12538152.jpg&fm=jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+  }
+  
+  .navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+  }
+  
+  .icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+  }
+  
+  .logo{
+    color: #ff7200;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+    margin-top: 5px
+  }
+  
+  .menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+  }
+  
+  ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+  }
+  
+  ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+  }
+  
+  ul li a:hover{
+    color: #ff7200;
+  }
+   .filter{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+   
+   }
+   table{
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%; 
+    border-collapse: collapse;
+    border-spacing: 0;
+    box-shadow: 0 2px 15px rgba(64,64,64,.7);
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
+   
+   }
+   td , th{
+    padding: 15px 20px;
+    text-align: center;
+    
+   
+   }
+   th{
+    background-color: #ba68c8;
+    color: #fafafa;
+    font-family: 'Open Sans',Sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
+   
+   }
+   tr{
+    width: 100%;
+    background-color: #fafafa;
+    font-family: 'Montserrat', sans-serif;
+   }
+   tr:nth-child(even){
+    background-color: #eeeeee;
+   }
+   @media screen and (max-width: 991.98px) {
+    .wrapper {
+        width: 90%;
+    }
+
+    .logo a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav .menu {
+        width: 100%;
+        margin: 0;
+    }
+
+    nav .menu ul {
+        text-align: center;
+        margin: auto;
+        line-height: 60px;
+    }
+
+    nav .menu ul li {
+        display: inline-block;
+        float: none;
+    }
+
+    section {
+        display: block;
+    }
+
+    section img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .kartu-tutor {
+        width: 50%;
+    }
+
+    .kartu-partner {
+        width: 50%;
+    }
+}
+
+.tombol-menu {
+    position: absolute;
+    top: 1.7rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+
+.tombol-menu .garis {
+    height: 3px;
+    background-color: #3f72af;
+}
+
+@media screen and (max-width: 991.98px) {
+    .logo a {
+        display: inline;
+    }
+    .tombol-menu {
+        display: flex;
+    }
+    nav .menu {
+        display: none;
+    }
+    nav .menu.active {
+        display: flex;
+    }
+    nav ul li {
+        width:100%;
+        border-bottom:1px solid #333333;
+    }
+}
